@@ -10,6 +10,11 @@ describe('personal site content', () => {
     expect(site.contact.consultationEmail).toBe('1931630839@qq.com');
     expect(site.contact.github).toBe('https://github.com/dreambird25');
     expect(site.contact.blog).toBe('https://blog.csdn.net/qq_43657722');
+    expect(site.profileStats).toEqual([
+      { label: '开发经验', value: '5 年' },
+      { label: 'CSDN 总阅读量', value: '50万+' },
+      { label: 'CSDN 原创文章', value: '近 200 篇' },
+    ]);
   });
 
   it('describes sifanERP as the active project', () => {

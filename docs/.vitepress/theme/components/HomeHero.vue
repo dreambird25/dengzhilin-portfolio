@@ -17,17 +17,9 @@ import { site } from '../site';
       </a>
     </div>
     <dl class="hero-facts">
-      <div>
-        <dt>Current focus</dt>
-        <dd>sifanERP · Amazon ERP</dd>
-      </div>
-      <div>
-        <dt>Based on</dt>
-        <dd>Java · Vue · API Integration</dd>
-      </div>
-      <div>
-        <dt>Writing at</dt>
-        <dd>CSDN</dd>
+      <div v-for="stat in site.profileStats" :key="stat.label">
+        <dt>{{ stat.label }}</dt>
+        <dd>{{ stat.value }}</dd>
       </div>
     </dl>
   </section>

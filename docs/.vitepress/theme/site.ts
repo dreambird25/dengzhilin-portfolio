@@ -5,6 +5,11 @@ export const site = {
   domain: 'dengzhilin.fun',
   summary:
     '我专注于把跨境电商的复杂业务、第三方平台能力和工程治理，做成稳定、可观测、可持续演进的软件系统。',
+  profileStats: [
+    { label: '开发经验', value: '5 年' },
+    { label: 'CSDN 总阅读量', value: '50万+' },
+    { label: 'CSDN 原创文章', value: '近 200 篇' },
+  ],
   contact: {
     email: 'dengzhilin666@gmail.com',
     consultationEmail: '1931630839@qq.com',
