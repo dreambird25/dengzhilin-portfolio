@@ -1,4 +1,6 @@
 import { describe, expect, it } from 'vitest';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { site } from '../docs/.vitepress/theme/site';
 
 describe('personal site content', () => {
@@ -13,5 +15,19 @@ describe('personal site content', () => {
     expect(site.projects).toHaveLength(1);
     expect(site.projects[0].name).toBe('sifanERP');
     expect(site.projects[0].status).toBe('正在构建');
+  });
+
+  it('uses custom page components for every secondary page', () => {
+    const expectedComponents = {
+      'about.md': '<AboutPage />',
+      'projects.md': '<ProjectsPage />',
+      'blog.md': '<BlogPage />',
+      'now.md': '<NowPage />',
+    };
+
+    for (const [file, component] of Object.entries(expectedComponents)) {
+      const content = readFileSync(resolve('docs', file), 'utf8');
+      expect(content).toContain(component);
+    }
   });
 });

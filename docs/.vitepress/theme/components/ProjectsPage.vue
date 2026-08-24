@@ -1,0 +1,9 @@
+<script setup lang="ts">
+import { site } from '../site';
+const project = site.projects[0];
+</script>
+
+<template>
+  <section class="page-hero"><div class="site-container page-hero-inner"><p class="eyebrow">Selected work · {{ project.status }}</p><h1>{{ project.name }}<br>让 Amazon 业务协同运转。</h1><p class="page-lead">面向 Amazon 业务的企业级 ERP，将平台接口、运营流程与数据报表中的复杂性，收敛为稳定、可协作的系统能力。</p></div></section>
+  <section class="page-section project-showcase"><div class="site-container"><div class="project-metrics"><div><strong>3</strong><span>平台接口层</span></div><div><strong>8+</strong><span>核心业务域</span></div><div><strong>1</strong><span>正在持续构建的系统</span></div></div><div class="project-architecture"><p class="section-kicker">System focus</p><h2>平台集成、业务数据、运营工作台。</h2><p>从网关、核心业务、用户权限，到异步任务和第三方平台集成，让每一层都有清晰边界，并可被独立验证和演进。</p></div><div class="capability-grid"><article v-for="item in project.highlights" :key="item"><span>↗</span>{{ item }}</article></div><p class="project-stack-display">{{ project.stack }}</p></div></section>
+</template>

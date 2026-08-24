@@ -5,6 +5,10 @@ import FocusGrid from './components/FocusGrid.vue';
 import ProjectGrid from './components/ProjectGrid.vue';
 import WritingList from './components/WritingList.vue';
 import ContactCta from './components/ContactCta.vue';
+import AboutPage from './components/AboutPage.vue';
+import ProjectsPage from './components/ProjectsPage.vue';
+import BlogPage from './components/BlogPage.vue';
+import NowPage from './components/NowPage.vue';
 import './style.css';
 
 export default {
@@ -16,5 +20,9 @@ export default {
     app.component('ProjectGrid', ProjectGrid);
     app.component('WritingList', WritingList);
     app.component('ContactCta', ContactCta);
+    app.component('AboutPage', AboutPage);
+    app.component('ProjectsPage', ProjectsPage);
+    app.component('BlogPage', BlogPage);
+    app.component('NowPage', NowPage);
   },
 };
