@@ -99,6 +99,7 @@ a:hover { color: var(--accent); }
 .principle-list article { position: relative; padding: 30px 0 32px 52px; border-bottom: 1px solid var(--line); }
 .principle-list span, .now-grid span { position: absolute; left: 0; top: 35px; color: var(--accent); font: 650 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .principle-list h2, .stack-block h2, .writing-page-layout h2, .project-architecture h2 { margin: 0; color: var(--ink); font-size: clamp(25px, 3vw, 38px); letter-spacing: -.045em; }
+.writing-page-layout h2 { margin-top: 14px; }
 .principle-list p, .project-architecture > p:last-child, .now-grid p, .editorial-list p { margin: 13px 0 0; color: var(--ink-soft); font-size: 16px; line-height: 1.75; }
 .stack-block h2 { margin-top: 14px; }
 .tag-cloud { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
