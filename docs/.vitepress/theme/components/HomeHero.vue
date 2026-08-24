@@ -1,0 +1,34 @@
+<script setup lang="ts">
+import { site } from '../site';
+</script>
+
+<template>
+  <section class="hero-section site-container">
+    <p class="eyebrow">Software Engineer · {{ site.romanizedName }}</p>
+    <h1>
+      把复杂业务，<br />
+      做成可靠的软件系统。
+    </h1>
+    <p class="hero-summary">{{ site.summary }}</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="/projects">正在构建的项目</a>
+      <a class="button button-secondary" :href="site.contact.github" target="_blank" rel="noreferrer">
+        GitHub
+      </a>
+    </div>
+    <dl class="hero-facts">
+      <div>
+        <dt>Current focus</dt>
+        <dd>sifanERP · Amazon ERP</dd>
+      </div>
+      <div>
+        <dt>Based on</dt>
+        <dd>Java · Vue · API Integration</dd>
+      </div>
+      <div>
+        <dt>Writing at</dt>
+        <dd>CSDN</dd>
+      </div>
+    </dl>
+  </section>
+</template>
