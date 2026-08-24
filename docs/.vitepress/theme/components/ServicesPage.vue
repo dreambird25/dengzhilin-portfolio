@@ -1,10 +1,27 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+import { site } from '../site';
+
+const copied = ref(false);
+
+async function copyConsultationEmail() {
+  await navigator.clipboard.writeText(site.contact.consultationEmail);
+  copied.value = true;
+  window.setTimeout(() => (copied.value = false), 2000);
+}
+</script>
+
 <template>
   <section class="page-hero service-hero">
     <div class="site-container page-hero-inner">
       <p class="eyebrow">Network infrastructure services</p>
       <h1>为海外社媒运营，<br>提供网络技术支持。</h1>
       <p class="page-lead">面向 TikTok、Instagram、YouTube 等海外社媒业务，提供中转服务搭建、出海流量基础设施与设备订阅管理相关的技术服务。</p>
-      <a class="button button-primary" href="mailto:dengzhilin666@gmail.com?subject=%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E6%9C%8D%E5%8A%A1%E5%92%A8%E8%AF%A2">咨询合作</a>
+      <div class="service-contact">
+        <p>咨询合作</p>
+        <a :href="'mailto:' + site.contact.consultationEmail">{{ site.contact.consultationEmail }}</a>
+        <button class="button button-primary" type="button" @click="copyConsultationEmail">{{ copied ? '已复制' : '一键复制邮箱' }}</button>
+      </div>
     </div>
   </section>
 

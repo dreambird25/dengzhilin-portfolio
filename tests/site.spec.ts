@@ -7,6 +7,7 @@ describe('personal site content', () => {
   it('uses Deng Zhilin’s public identity and contact links', () => {
     expect(site.name).toBe('邓智林');
     expect(site.contact.email).toBe('dengzhilin666@gmail.com');
+    expect(site.contact.consultationEmail).toBe('1931630839@qq.com');
     expect(site.contact.github).toBe('https://github.com/dreambird25');
     expect(site.contact.blog).toBe('https://blog.csdn.net/qq_43657722');
   });

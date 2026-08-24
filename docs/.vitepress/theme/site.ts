@@ -7,6 +7,7 @@ export const site = {
     '我专注于把跨境电商的复杂业务、第三方平台能力和工程治理，做成稳定、可观测、可持续演进的软件系统。',
   contact: {
     email: 'dengzhilin666@gmail.com',
+    consultationEmail: '1931630839@qq.com',
     github: 'https://github.com/dreambird25',
     blog: 'https://blog.csdn.net/qq_43657722',
   },
