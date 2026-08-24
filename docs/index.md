@@ -9,6 +9,8 @@ description: Amazon ERP、平台 API 集成与工程化实践
 
 <ProjectGrid />
 
+<CurrentWork />
+
 <ServicesTeaser />
 
 <WritingList />

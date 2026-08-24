@@ -18,6 +18,11 @@ describe('personal site content', () => {
     expect(site.projects[0].status).toBe('正在构建');
   });
 
+  it('describes the advertising optimization work in progress', () => {
+    expect(site.currentWork.title).toContain('广告');
+    expect(site.currentWork.principles).toContain('数据新鲜度门禁');
+  });
+
   it('uses custom page components for every secondary page', () => {
     const expectedComponents = {
       'about.md': '<AboutPage />',
