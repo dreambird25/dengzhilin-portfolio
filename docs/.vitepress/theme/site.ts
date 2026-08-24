@@ -40,6 +40,13 @@ export const site = {
       stack:
         'Java 21 · Spring Boot · Spring Cloud · Vue 3 · MySQL · Redis · RabbitMQ · Nacos',
       highlights: ['SP-API / Ads API 集成', '微服务与网关治理', 'Flyway 数据库迁移', '可观测的异步任务'],
+      history: {
+        startedAt: '2022',
+        origin: '从零启动，初版采用 Vue 2、Element UI、JDK 8 与 Spring Boot。',
+        rebuild: '随后完成前后端全面重构，升级为面向长期演进的工程体系。',
+        contribution: '独立完成约 90% 功能',
+        commits: '2,000+ Git 提交',
+      },
     },
   ],
   currentWork: {

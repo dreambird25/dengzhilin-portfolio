@@ -16,6 +16,9 @@ describe('personal site content', () => {
     expect(site.projects).toHaveLength(1);
     expect(site.projects[0].name).toBe('sifanERP');
     expect(site.projects[0].status).toBe('正在构建');
+    expect(site.projects[0].history.startedAt).toBe('2022');
+    expect(site.projects[0].history.contribution).toBe('独立完成约 90% 功能');
+    expect(site.projects[0].history.commits).toBe('2,000+ Git 提交');
   });
 
   it('describes the advertising optimization work in progress', () => {
