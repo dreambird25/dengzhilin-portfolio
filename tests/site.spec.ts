@@ -23,6 +23,7 @@ describe('personal site content', () => {
       'projects.md': '<ProjectsPage />',
       'blog.md': '<BlogPage />',
       'now.md': '<NowPage />',
+      'services.md': '<ServicesPage />',
     };
 
     for (const [file, component] of Object.entries(expectedComponents)) {

@@ -9,6 +9,8 @@ import AboutPage from './components/AboutPage.vue';
 import ProjectsPage from './components/ProjectsPage.vue';
 import BlogPage from './components/BlogPage.vue';
 import NowPage from './components/NowPage.vue';
+import ServicesPage from './components/ServicesPage.vue';
+import ServicesTeaser from './components/ServicesTeaser.vue';
 import './style.css';
 
 export default {
@@ -24,5 +26,7 @@ export default {
     app.component('ProjectsPage', ProjectsPage);
     app.component('BlogPage', BlogPage);
     app.component('NowPage', NowPage);
+    app.component('ServicesPage', ServicesPage);
+    app.component('ServicesTeaser', ServicesTeaser);
   },
 };

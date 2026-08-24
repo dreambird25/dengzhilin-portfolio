@@ -10,6 +10,7 @@ const links = [
   { label: '主页', href: '/' },
   { label: '关于', href: '/about' },
   { label: '项目', href: '/projects' },
+  { label: '服务', href: '/services' },
   { label: '博客', href: '/blog' },
   { label: 'Now', href: '/now' },
 ];
