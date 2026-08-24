@@ -20,7 +20,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#111827' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: '邓智林' }],
-    ['link', { rel: 'icon', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: '32x32' }],
   ],
   transformHead({ pageData, title, description }) {
     const canonical = canonicalUrl(pageData.relativePath);
