@@ -11,7 +11,8 @@ function canonicalUrl(relativePath: string) {
 export default defineConfig({
   lang: 'zh-CN',
   title: '邓智林',
-  description: 'Amazon ERP、平台 API 集成与工程化实践',
+  description:
+    '邓智林，5年软件开发经验，专注 Amazon ERP、SP-API / Ads API 集成、跨境电商业务系统与工程化实践，持续构建 sifanERP。',
   cleanUrls: true,
   sitemap: {
     hostname: siteUrl,
@@ -24,7 +25,12 @@ export default defineConfig({
   ],
   transformHead({ pageData, title, description }) {
     const canonical = canonicalUrl(pageData.relativePath);
-    const pageTitle = title === site.name ? site.name : `${title} | ${site.name}`;
+    const pageTitle =
+      pageData.relativePath === 'index.md'
+        ? title
+        : title === site.name
+          ? site.name
+          : `${title} | ${site.name}`;
     const pageHead = [
       ['link', { rel: 'canonical', href: canonical }],
       ['meta', { property: 'og:title', content: pageTitle }],
