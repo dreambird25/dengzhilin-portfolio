@@ -3,6 +3,11 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 describe('SEO assets', () => {
+  it('serves VitePress pages through extensionless Vercel URLs', () => {
+    const vercelConfig = JSON.parse(readFileSync(resolve('vercel.json'), 'utf8'));
+    expect(vercelConfig.cleanUrls).toBe(true);
+  });
+
   it('exposes a crawlable robots file and person metadata', () => {
     const robots = readFileSync(resolve('docs', 'public', 'robots.txt'), 'utf8');
     const config = readFileSync(resolve('docs', '.vitepress', 'config.ts'), 'utf8');
