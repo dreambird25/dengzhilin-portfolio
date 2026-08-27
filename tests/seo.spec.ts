@@ -13,6 +13,7 @@ describe('SEO assets', () => {
     expect(config).toContain("'application/ld+json'");
     expect(config).toContain("'Person'");
     expect(config).toContain("href: '/favicon.ico'");
+    expect(config).toContain('appearance: false');
     expect(existsSync(resolve('docs', 'public', 'favicon.ico'))).toBe(true);
     expect(homepage).toContain('title: 邓智林｜Amazon ERP 与平台 API 工程师');
     expect(homepage).toContain('titleTemplate: false');

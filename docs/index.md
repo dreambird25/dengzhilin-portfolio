@@ -6,9 +6,9 @@ description: 邓智林，5年软件开发经验，专注 Amazon ERP、SP-API / A
 
 <HomeHero />
 
-<FocusGrid />
-
 <ProjectGrid />
+
+<FocusGrid />
 
 <CurrentWork />
 

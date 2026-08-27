@@ -10,6 +10,7 @@ function canonicalUrl(relativePath: string) {
 
 export default defineConfig({
   lang: 'zh-CN',
+  appearance: false,
   title: '邓智林',
   description:
     '邓智林，5年软件开发经验，专注 Amazon ERP、SP-API / Ads API 集成、跨境电商业务系统与工程化实践，持续构建 sifanERP。',

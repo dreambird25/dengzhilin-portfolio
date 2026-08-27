@@ -21,6 +21,20 @@ import { site } from '../site';
           <span class="project-index">01</span>
         </div>
         <p class="project-description">{{ project.description }}</p>
+        <dl class="project-proof-grid">
+          <div>
+            <dt>从零启动</dt>
+            <dd>{{ project.history.startedAt }}</dd>
+          </div>
+          <div>
+            <dt>核心贡献</dt>
+            <dd>{{ project.history.contribution }}</dd>
+          </div>
+          <div>
+            <dt>持续迭代</dt>
+            <dd>{{ project.history.commits }}</dd>
+          </div>
+        </dl>
         <p class="project-stack">{{ project.stack }}</p>
         <ul class="project-highlights">
           <li v-for="highlight in project.highlights" :key="highlight">{{ highlight }}</li>

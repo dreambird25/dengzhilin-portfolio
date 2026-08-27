@@ -12,8 +12,9 @@ describe('personal site content', () => {
     expect(site.contact.blog).toBe('https://blog.csdn.net/qq_43657722');
     expect(site.profileStats).toEqual([
       { label: '开发经验', value: '5 年' },
-      { label: 'CSDN 总阅读量', value: '50万+' },
-      { label: 'CSDN 原创文章', value: '近 200 篇' },
+      { label: 'sifanERP Git 提交', value: '2,000+' },
+      { label: '设备规模实践', value: '10,000+' },
+      { label: 'CSDN 阅读 / 原创', value: '50万+ / 近200篇' },
     ]);
   });
 
@@ -44,5 +45,10 @@ describe('personal site content', () => {
       const content = readFileSync(resolve('docs', file), 'utf8');
       expect(content).toContain(component);
     }
+  });
+
+  it('presents the primary project before the general capability summary', () => {
+    const homepage = readFileSync(resolve('docs', 'index.md'), 'utf8');
+    expect(homepage.indexOf('<ProjectGrid />')).toBeLessThan(homepage.indexOf('<FocusGrid />'));
   });
 });
