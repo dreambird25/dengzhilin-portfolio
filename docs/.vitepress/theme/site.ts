@@ -69,19 +69,22 @@ export const site = {
   },
   writings: [
     {
-      date: '2025.12',
-      title: 'Amazon SP-API：授权封装、SDK 分层与 AAD 加密一致性设计',
-      summary: '从授权、SDK 和安全边界出发，降低第三方平台集成的长期维护成本。',
+      date: '2026.08.28',
+      title: '广告自动优化为什么必须先解决数据新鲜度问题',
+      summary: '数据新鲜度决定自动化是否有资格做判断；从水位、证据强度、执行护栏到历史回放建立经营闭环。',
+      url: 'https://blog.csdn.net/qq_43657722/article/details/164145114',
     },
     {
-      date: '2026.01',
-      title: 'AI 时代的软件工程：升级，而非消亡',
-      summary: '把 AI 放进设计、验证与决策流程，而不是把工程责任交给提示词。',
+      date: '2026.08.28',
+      title: 'Amazon SP-API 数据同步：限流、幂等、重试与断点恢复',
+      summary: '拆解店铺级限流、错误分类、幂等写入、成功游标和站点时间口径，说明同步如何在失败后继续推进。',
+      url: 'https://blog.csdn.net/qq_43657722/article/details/164141569',
     },
     {
-      date: '2026.02',
-      title: '基于 OpenAPI 规范生成亚马逊广告 Java SDK',
-      summary: '用规范生成和 Maven 依赖管理，减少 Ads API 集成中的重复劳动。',
+      date: '2026.08.28',
+      title: '从 0 到 2,000+ 次提交：ERP 四年的架构演进',
+      summary: '从快速交付到业务模块、平台集成、数据迁移与上线门禁，复盘长期 ERP 如何控制复杂度。',
+      url: 'https://blog.csdn.net/qq_43657722/article/details/164139889',
     },
   ],
   technologies: [

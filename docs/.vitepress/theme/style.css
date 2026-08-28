@@ -74,6 +74,9 @@ a:hover { color: var(--accent); }
 .writing-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .writing-list li { display: grid; grid-template-columns: 130px 1fr; gap: 30px; padding: 26px 0; border-bottom: 1px solid var(--line); }
 .writing-list h3 { margin: 0 0 9px; font-size: 19px; }
+.writing-list h3 a, .editorial-list h3 a { color: var(--ink); }
+.writing-list h3 a:hover, .editorial-list h3 a:hover { color: var(--accent); }
+.article-link { display: inline-flex; margin-top: 12px; color: var(--accent); font-size: 13px; font-weight: 650; }
 
 .contact-section { padding: 92px 0; background: var(--ink); color: white; }
 .contact-section .eyebrow { color: #a7b6cf; }

@@ -15,8 +15,11 @@ import { site } from '../site';
       <li v-for="writing in site.writings" :key="writing.title">
         <time>{{ writing.date }}</time>
         <div>
-          <h3>{{ writing.title }}</h3>
+          <h3>
+            <a :href="writing.url" target="_blank" rel="noreferrer">{{ writing.title }}</a>
+          </h3>
           <p>{{ writing.summary }}</p>
+          <a class="article-link" :href="writing.url" target="_blank" rel="noreferrer">阅读原文 →</a>
         </div>
       </li>
     </ol>

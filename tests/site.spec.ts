@@ -32,6 +32,23 @@ describe('personal site content', () => {
     expect(site.currentWork.principles).toContain('数据新鲜度门禁');
   });
 
+  it('links the latest writing to the published CSDN articles', () => {
+    expect(site.writings.map(({ title, url }) => ({ title, url }))).toEqual([
+      {
+        title: '广告自动优化为什么必须先解决数据新鲜度问题',
+        url: 'https://blog.csdn.net/qq_43657722/article/details/164145114',
+      },
+      {
+        title: 'Amazon SP-API 数据同步：限流、幂等、重试与断点恢复',
+        url: 'https://blog.csdn.net/qq_43657722/article/details/164141569',
+      },
+      {
+        title: '从 0 到 2,000+ 次提交：ERP 四年的架构演进',
+        url: 'https://blog.csdn.net/qq_43657722/article/details/164139889',
+      },
+    ]);
+  });
+
   it('uses custom page components for every secondary page', () => {
     const expectedComponents = {
       'about.md': '<AboutPage />',
