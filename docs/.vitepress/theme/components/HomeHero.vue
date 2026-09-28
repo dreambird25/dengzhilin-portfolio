@@ -11,7 +11,7 @@ import { site } from '../site';
     </h1>
     <p class="hero-summary">{{ site.summary }}</p>
     <div class="hero-actions">
-      <a class="button button-primary" href="/projects">查看 sifanERP</a>
+      <a class="button button-primary" href="/projects">查看 SF Amazon ERP</a>
       <a class="button button-secondary" href="/services">技术合作</a>
       <a class="button button-secondary" :href="site.contact.github" target="_blank" rel="noreferrer">
         GitHub

@@ -13,7 +13,7 @@ export default defineConfig({
   appearance: false,
   title: '邓智林',
   description:
-    '邓智林，5年软件开发经验，专注 Amazon ERP、SP-API / Ads API 集成、跨境电商业务系统与工程化实践，持续构建 sifanERP。',
+    '邓智林，5年软件开发经验，持续构建 SF Amazon ERP，聚焦 Amazon 运营数据底座、自动化运营与 AI Agent 辅助开品设计。',
   cleanUrls: true,
   sitemap: {
     hostname: siteUrl,

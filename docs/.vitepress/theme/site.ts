@@ -1,13 +1,13 @@
 export const site = {
   name: '邓智林',
   romanizedName: 'Deng Zhilin',
-  role: 'Amazon ERP · 平台 API 集成 · 工程化实践',
+  role: 'Amazon 运营系统 · 数据自动化 · AI Agent',
   domain: 'dengzhilin.fun',
   summary:
-    '5 年软件开发经验，持续构建 sifanERP；专注 Amazon ERP、SP-API / Ads API 集成与跨境业务系统工程化。',
+    '5 年软件开发经验，持续构建 SF Amazon ERP；当前聚焦 Amazon 运营数据底座与自动化，以及 AI Agent 辅助快速开品和商品设计。',
   profileStats: [
     { label: '开发经验', value: '5 年' },
-    { label: 'sifanERP Git 提交', value: '2,000+' },
+    { label: 'SF Amazon ERP Git 提交', value: '2,000+' },
     { label: '设备规模实践', value: '10,000+' },
     { label: 'CSDN 阅读 / 原创', value: '52万+ / 200篇' },
   ],
@@ -26,23 +26,23 @@ export const site = {
     },
     {
       number: '02',
-      title: '企业级 ERP',
+      title: '数据底座与运营自动化',
       description:
-        '将店铺、Listing、订单、库存、FBA、广告和运营数据收敛为清晰的业务模型与可维护的工作台。',
+        '打通店铺、Listing、订单、库存、FBA 与广告数据，逐步把运营分析和高频动作接入可追踪的自动化流程。',
     },
     {
       number: '03',
-      title: '工程化与 AI',
+      title: 'AI Agent 与商品设计',
       description:
-        '用类型、迁移、测试和部署门禁降低不确定性，也用 AI 加速设计、验证与复盘，而非绕过工程判断。',
+        '探索让 AI Agent 结合 Amazon 运营数据，辅助选品、Listing 质检、商品图设计与方案验证，加快开品迭代。',
     },
   ],
   projects: [
     {
-      name: 'sifanERP',
+      name: 'SF Amazon ERP',
       status: '正在构建',
       description:
-        '面向 Amazon 业务的企业级 ERP，覆盖店铺、Listing、订单、库存、FBA、广告、销量分析、运营工作台、文件管理和权限。',
+        '思帆科技亚马逊运营系统：以现有 ERP 能力为基础，建设运营数据底座与自动化流程，并探索 AI Agent 辅助开品和设计。',
       stack:
         'Java 21 · Spring Boot · Spring Cloud · Vue 3 · MySQL · Redis · RabbitMQ · Nacos',
       highlights: ['SP-API / Ads API 集成', '微服务与网关治理', 'Flyway 数据库迁移', '可观测的异步任务'],
@@ -56,15 +56,13 @@ export const site = {
     },
   ],
   currentWork: {
-    title: '广告经营优化能力',
+    title: '数据底座与 AI Agent',
     summary:
-      '正在将 Amazon Ads 的数据同步、精细决策、高频执行与效果验证，建设为可观察、可回放、可控制的经营闭环。',
-    principles: ['数据新鲜度门禁', '按证据强弱控制动作幅度', '执行护栏与可回放验证'],
+      '当前沿两条主线推进：汇集 Amazon 业务数据并逐步形成可追踪的自动化运营闭环；让 AI Agent 结合运营数据，辅助快速开品、Listing 优化和商品视觉设计。',
+    principles: ['数据底座与自动化运营', 'AI Agent 辅助开品与设计'],
     directions: [
-      '汇集广告实体、搜索词与经营数据，并在数据滞后时暂停自动决策。',
-      '围绕关键词、定向与预算建立分层决策，充分考虑转化延迟与样本量。',
-      '将调价、预算再分配和低效流量治理放进可审计、可追踪的执行链路。',
-      '通过历史回放、对照观察和效果回读，持续校正决策而非依赖单次规则。',
+      '汇集商品、Listing、订单、库存、广告与经营数据，关注数据新鲜度、口径一致性和可追溯性，再逐步接入自动化分析与执行。',
+      '让 AI Agent 在可信数据与人工审核的基础上，辅助选品判断、Listing 质检、商品图设计和方案验证，缩短开品迭代周期。',
     ],
   },
   writings: [
