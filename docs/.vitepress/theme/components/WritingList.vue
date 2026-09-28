@@ -12,7 +12,7 @@ import { site } from '../site';
       <a class="text-link" :href="site.contact.blog" target="_blank" rel="noreferrer">访问 CSDN →</a>
     </div>
     <ol class="writing-list">
-      <li v-for="writing in site.writings" :key="writing.title">
+      <li v-for="writing in site.writings.slice(0, 3)" :key="writing.title">
         <time>{{ writing.date }}</time>
         <div>
           <h3>

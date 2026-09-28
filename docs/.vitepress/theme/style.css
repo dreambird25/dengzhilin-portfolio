@@ -78,8 +78,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .writing-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .writing-list li { display: grid; grid-template-columns: 130px 1fr; gap: 30px; padding: 26px 0; border-bottom: 1px solid var(--line); }
 .writing-list h3 { margin: 0 0 9px; font-size: 19px; }
-.writing-list h3 a, .editorial-list h3 a { color: var(--ink); }
-.writing-list h3 a:hover, .editorial-list h3 a:hover { color: var(--accent); }
+.writing-list h3 a, .editorial-list h4 a { color: var(--ink); }
+.writing-list h3 a:hover, .editorial-list h4 a:hover { color: var(--accent); }
 .article-link { display: inline-flex; margin-top: 12px; color: var(--accent); font-size: 13px; font-weight: 650; }
 
 .contact-section { padding: 86px 0; background: #e9eef5; color: var(--ink); }
@@ -111,6 +111,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .page-section { padding: 108px 0; }
 .section-kicker { margin: 0; color: var(--accent); font: 650 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .06em; text-transform: uppercase; }
 .split-layout, .writing-page-layout { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 72px; }
+.writing-group + .writing-group { margin-top: 72px; }
+.writing-group-title { margin: 0; color: var(--ink); font-size: 22px; font-weight: 700; letter-spacing: -.035em; }
 .principle-list { border-top: 1px solid var(--line); }
 .principle-list article { position: relative; padding: 30px 0 32px 52px; border-bottom: 1px solid var(--line); }
 .principle-list span, .now-grid span { position: absolute; left: 0; top: 35px; color: var(--accent); font: 650 13px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
@@ -140,7 +142,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .editorial-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .editorial-list li { display: grid; grid-template-columns: 110px 1fr; gap: 28px; padding: 27px 0; border-bottom: 1px solid var(--line); }
 .editorial-list time { color: var(--ink-soft); font: 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-.editorial-list h3 { margin: 0; color: var(--ink); font-size: 20px; letter-spacing: -.03em; }
+.editorial-list h4 { margin: 0; color: var(--ink); font-size: 20px; font-weight: 650; letter-spacing: -.03em; }
 .now-hero { background: linear-gradient(180deg, #f0f4f8 0%, var(--canvas) 100%); }
 .now-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .now-grid article { position: relative; min-height: 270px; padding: 70px 28px 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }

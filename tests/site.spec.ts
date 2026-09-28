@@ -14,7 +14,7 @@ describe('personal site content', () => {
       { label: '开发经验', value: '5 年' },
       { label: 'sifanERP Git 提交', value: '2,000+' },
       { label: '设备规模实践', value: '10,000+' },
-      { label: 'CSDN 阅读 / 原创', value: '50万+ / 近200篇' },
+      { label: 'CSDN 阅读 / 原创', value: '52万+ / 200篇' },
     ]);
   });
 
@@ -33,20 +33,22 @@ describe('personal site content', () => {
   });
 
   it('links the latest writing to the published CSDN articles', () => {
-    expect(site.writings.map(({ title, url }) => ({ title, url }))).toEqual([
+    expect(site.writings.slice(0, 3).map(({ title, url }) => ({ title, url }))).toEqual([
       {
-        title: '广告自动优化为什么必须先解决数据新鲜度问题',
-        url: 'https://blog.csdn.net/qq_43657722/article/details/164145114',
+        title: 'AI 商品图视觉蒸馏实战：基于“版型-符号”解耦与提示词盲测闭环',
+        url: 'https://blog.csdn.net/qq_43657722/article/details/166683715',
       },
       {
-        title: 'Amazon SP-API 数据同步：限流、幂等、重试与断点恢复',
-        url: 'https://blog.csdn.net/qq_43657722/article/details/164141569',
+        title: 'Amazon Ads API 实战：如何高精度关联广告活动（Campaign）与 ASIN 及 ERP 产品主数据',
+        url: 'https://blog.csdn.net/qq_43657722/article/details/165621024',
       },
       {
-        title: '从 0 到 2,000+ 次提交：ERP 四年的架构演进',
-        url: 'https://blog.csdn.net/qq_43657722/article/details/164139889',
+        title: '别再追“新词”了！从 Graph Engineering 破局，彻底搞懂 AI Agent 的底层内核 Loop Engineering',
+        url: 'https://blog.csdn.net/qq_43657722/article/details/165333478',
       },
     ]);
+    expect(site.writings).toHaveLength(8);
+    expect(new Set(site.writings.map(({ url }) => url)).size).toBe(site.writings.length);
   });
 
   it('uses custom page components for every secondary page', () => {
