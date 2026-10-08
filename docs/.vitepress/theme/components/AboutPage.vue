@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { site } from '../site';
+</script>
+
 <template>
   <section class="page-hero">
     <div class="site-container page-hero-inner">
@@ -16,5 +20,18 @@
       </div>
     </div>
   </section>
-  <section class="page-section section-tint"><div class="site-container stack-block"><p class="section-kicker">Toolkit</p><h2>日常使用的技术工具。</h2><div class="tag-cloud"><span v-for="item in ['Java 21', 'Spring Boot', 'Spring Cloud', 'Vue 3', 'TypeScript', 'MySQL', 'Redis', 'RabbitMQ', 'Nacos', 'Flyway', 'Vitest']" :key="item">{{ item }}</span></div></div></section>
+  <section class="page-section section-tint">
+    <div class="site-container stack-block">
+      <p class="section-kicker">Toolkit</p>
+      <h2>日常使用的技术工具。</h2>
+      <div class="toolkit-grid">
+        <div v-for="group in site.technologies" :key="group.label" class="toolkit-row">
+          <h3>{{ group.label }}</h3>
+          <div class="tag-cloud">
+            <span v-for="item in group.items" :key="item">{{ item }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
