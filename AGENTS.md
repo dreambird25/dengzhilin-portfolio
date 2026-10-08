@@ -3,6 +3,7 @@
 ## 项目约束
 
 - 本仓库是邓智林个人网站 `dengzhilin.fun`，基于 VitePress、Vue、TypeScript 和 Vitest。保留现有站点身份、个人资料、项目与文章内容；不要用其他仓库或第三方个人站的内容替换。
+- UI 优化以当前版本为内容基准，保留 `site.ts`、页面文案、统计、文章与联系链接、README 和 SEO 元数据。未经明确要求，不更换技术栈、不改写个人经历；布局调整可以修改组件结构，但须核对渲染后的文案与链接一致。
 - 使用 pnpm；`pnpm-lock.yaml` 是依赖锁文件。修改依赖时同步更新它，不要删除锁文件或改用 npm、Yarn、Bun 生成另一套锁文件。
 - Vercel 使用锁文件安装依赖。提交前确认 `pnpm install --frozen-lockfile`、`pnpm test` 和 `pnpm build` 可通过。
 - 只处理当前需求，保留无关改动；不要未经用户明确要求就部署或改写 Git 历史。
