@@ -123,18 +123,47 @@ export const site = {
       url: 'https://blog.csdn.net/qq_43657722/article/details/164139889',
     },
   ],
+  now: {
+    updatedAt: '2026.10',
+    summary:
+      '当前围绕 SF Amazon ERP 推进广告自动化与运营日志：把广告数据、候选判断、确认执行和结果核对串成工作流，让关键运营操作的人员、依据、过程和结果有据可查。',
+    directions: [
+      {
+        title: '广告自动化与执行闭环',
+        status: '候选识别、确认执行与日志已打通',
+        description:
+          '围绕 Amazon Ads API，建立待否词清单、执行前复核、人工确认、结果回查与执行日志。持续完善规则自动执行、数据新鲜度与异常恢复，让每次广告优化都能解释判断依据和实际结果。',
+      },
+      {
+        title: '跨业务运营日志',
+        status: '开发接入已完成',
+        description:
+          '已接入 FBA 移除、Listing 修改、发货排期、采购排期与拼箱。记录确认人与实际执行人、操作来源、原因、前后数据和逐项结果，区分执行成功、失败与待核对，为跨业务复盘建立统一入口。',
+      },
+    ],
+    next:
+      '继续完善广告规则的自动执行与失败恢复，推进运营日志的发布验收。在可追溯数据、执行前校验和结果核对的基础上，把自动化从建议逐步推进到可靠执行。',
+  },
   technologies: [
-    'Java 21',
-    'Spring Boot',
-    'Spring Cloud',
-    'Vue 3',
-    'TypeScript',
-    'Vite',
-    'MySQL',
-    'Redis',
-    'RabbitMQ',
-    'Nacos',
-    'Flyway',
-    'Vitest',
+    {
+      label: '后端与服务治理',
+      items: ['Java 21', 'Spring Boot 3.5', 'Spring Cloud', 'Spring Cloud Alibaba', 'Spring Cloud Gateway', 'OpenFeign', 'Nacos', 'Sa-Token'],
+    },
+    {
+      label: '前端与交互',
+      items: ['Vue 3', 'TypeScript', 'Vite', 'Naive UI', 'Ant Design Vue', 'Pinia', 'Vue Router', 'Alova', 'ECharts'],
+    },
+    {
+      label: '数据与任务调度',
+      items: ['MySQL 8', 'MyBatis-Plus', 'Redis', 'Redisson', 'RabbitMQ', 'XXL-JOB', 'Flyway'],
+    },
+    {
+      label: '平台集成与 AI 探索',
+      items: ['Amazon SP-API', 'Amazon Ads API', '领星 OpenAPI', '氚云 API', 'Spring AI Alibaba', 'MCP SDK'],
+    },
+    {
+      label: '构建与质量工具',
+      items: ['Maven', 'pnpm', 'Docker', 'JUnit 5', 'Vitest', 'ESLint', 'Prettier'],
+    },
   ],
 } as const;
