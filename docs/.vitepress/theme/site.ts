@@ -48,8 +48,32 @@ export const site = {
       highlights: ['SP-API / Ads API 集成', '微服务与网关治理', 'Flyway 数据库迁移', '可观测的异步任务'],
       history: {
         startedAt: '2022',
-        origin: '从零启动，初版采用 Vue 2、Element UI、JDK 8 与 Spring Boot。',
-        rebuild: '随后完成前后端全面重构，升级为面向长期演进的工程体系。',
+        milestones: [
+          {
+            stage: '2022 · 单体起步',
+            description: '从零启动，初版基于 JDK 8、Spring Boot 单体架构与 Vue 2 / Element UI，搭建 ERP 业务功能。',
+          },
+          {
+            stage: '架构升级 · Spring Cloud',
+            description: '随着业务持续扩展，逐步从单体项目演进为 Spring Cloud 微服务体系，建立服务拆分、网关与服务治理能力。',
+          },
+          {
+            stage: '系统重构 · Vue 3',
+            description: '前端从 Vue 2 升级到 Vue 3，并完成系统前后端全面重构，重新梳理业务模块与工程结构。',
+          },
+          {
+            stage: '迁移治理 · Flyway',
+            description: '增加数据库迁移服务，使用 Flyway 管理数据库结构变更，让迁移脚本随代码版本持续演进。',
+          },
+          {
+            stage: '运行时升级 · JDK 21',
+            description: '后端从 JDK 8 升级至 JDK 21，完成系统运行时与相关依赖的升级适配。',
+          },
+          {
+            stage: '正在做 · AI 与知识库',
+            description: '正在对接 AI 与知识库，将其接入现有 ERP 能力，探索业务知识检索与 AI 辅助工作流。',
+          },
+        ],
         contribution: '独立完成约 90% 功能',
         commits: '2,000+ Git 提交',
       },
