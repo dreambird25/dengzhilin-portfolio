@@ -46,6 +46,12 @@ export const site = {
       stack:
         'Java 21 · Spring Boot · Spring Cloud · Vue 3 · MySQL · Redis · RabbitMQ · Nacos',
       highlights: ['SP-API / Ads API 集成', '微服务与网关治理', 'Flyway 数据库迁移', '可观测的异步任务'],
+      delivery: {
+        title: '自动发货与补货协同',
+        status: '开发已完成',
+        description: '面向常规与时令产品，结合销量预测、库存和在途供给计算补货需求。',
+        steps: ['补货预览', '发货建单 / 拼箱', '执行结果记录'],
+      },
       history: {
         startedAt: '2022',
         milestones: [
@@ -148,7 +154,7 @@ export const site = {
     },
   ],
   now: {
-    updatedAt: '2026.10',
+    updatedAt: '2026.11',
     summary:
       '当前围绕 SF Amazon ERP 推进广告自动化与运营日志：把广告数据、候选判断、确认执行和结果核对串成工作流，让关键运营操作的人员、依据、过程和结果有据可查。',
     directions: [

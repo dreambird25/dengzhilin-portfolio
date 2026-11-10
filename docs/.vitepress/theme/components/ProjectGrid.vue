@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { site } from '../site';
+import ShipmentMilestone from './ShipmentMilestone.vue';
 </script>
 
 <template>
@@ -40,6 +41,7 @@ import { site } from '../site';
           <li v-for="highlight in project.highlights" :key="highlight">{{ highlight }}</li>
         </ul>
       </article>
+      <ShipmentMilestone />
     </div>
   </section>
 </template>

@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { site } from '../site';
+import ShipmentMilestone from './ShipmentMilestone.vue';
+import SectionTransition from './SectionTransition.vue';
 </script>
 
 <template>
@@ -10,6 +12,7 @@ import { site } from '../site';
       <p class="page-lead">{{ site.now.summary }}</p>
     </div>
   </section>
+  <div class="site-container"><ShipmentMilestone /></div>
   <section class="page-section">
     <div class="site-container now-grid">
       <article v-for="(direction, index) in site.now.directions" :key="direction.title">
@@ -20,6 +23,7 @@ import { site } from '../site';
       </article>
     </div>
   </section>
+  <SectionTransition pattern="orbit" />
   <section class="page-section section-tint">
     <div class="site-container work-detail">
       <p class="section-kicker">What happens next</p>

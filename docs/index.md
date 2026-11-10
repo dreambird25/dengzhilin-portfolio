@@ -6,14 +6,26 @@ description: 邓智林，5年软件开发经验，持续构建 SF Amazon ERP，�
 
 <HomeHero />
 
+<SectionTransition pattern="orbit" />
+
 <ProjectGrid />
+
+<SectionTransition pattern="grid" from="tint" to="canvas" />
 
 <FocusGrid />
 
+<SectionTransition pattern="fan" />
+
 <CurrentWork />
+
+<SectionTransition pattern="orbit" from="tint" to="canvas" />
 
 <ServicesTeaser />
 
+<SectionTransition pattern="grid" to="canvas" />
+
 <WritingList />
+
+<SectionTransition pattern="fan" to="ink" />
 
 <ContactCta />

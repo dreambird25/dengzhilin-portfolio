@@ -12,6 +12,7 @@ import NowPage from './components/NowPage.vue';
 import ServicesPage from './components/ServicesPage.vue';
 import ServicesTeaser from './components/ServicesTeaser.vue';
 import CurrentWork from './components/CurrentWork.vue';
+import SectionTransition from './components/SectionTransition.vue';
 import './style.css';
 
 export default {
@@ -30,5 +31,6 @@ export default {
     app.component('ServicesPage', ServicesPage);
     app.component('ServicesTeaser', ServicesTeaser);
     app.component('CurrentWork', CurrentWork);
+    app.component('SectionTransition', SectionTransition);
   },
 };
