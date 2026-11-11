@@ -23,7 +23,7 @@ import SectionTransition from './SectionTransition.vue';
       </article>
     </div>
   </section>
-  <SectionTransition pattern="orbit" />
+  <SectionTransition pattern="flow" />
   <section class="page-section section-tint">
     <div class="site-container work-detail">
       <p class="section-kicker">What happens next</p>

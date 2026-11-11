@@ -55,11 +55,10 @@ const project = site.projects[0];
           <div class="metric-heading">
             <strong>1</strong>
             <svg class="metric-art" viewBox="0 0 144 104" fill="none" aria-hidden="true">
-              <circle cx="72" cy="52" r="44" stroke="currentColor" />
-              <circle cx="72" cy="52" r="30" stroke="currentColor" />
-              <circle cx="72" cy="52" r="16" fill="currentColor" opacity=".3" />
-              <path d="M10 94 134 10" stroke="currentColor" />
-              <circle cx="109" cy="27" r="9" fill="#e1a889" />
+              <path d="M12 82h38V52h38V22h44m-10-10 10 10-10 10" stroke="currentColor" />
+              <rect x="4" y="74" width="16" height="16" fill="currentColor" />
+              <rect x="42" y="44" width="16" height="16" fill="currentColor" />
+              <rect x="80" y="14" width="16" height="16" fill="#e1a889" />
             </svg>
           </div>
           <h3>持续演进的系统</h3>
@@ -93,7 +92,7 @@ const project = site.projects[0];
     </div>
   </section>
 
-  <SectionTransition pattern="grid" />
+  <SectionTransition pattern="flow" />
   <section class="page-section section-tint">
     <div class="site-container work-detail">
       <p class="section-kicker">Ongoing capability</p>
