@@ -1,5 +1,28 @@
 <script setup lang="ts">
 import { site } from '../site';
+
+const toolkitScenarios = [
+  {
+    title: '接入业务平台',
+    description: '接入平台数据，处理授权、限流和状态同步。',
+    tools: ['Amazon SP-API', 'Amazon Ads API', '领星 OpenAPI'],
+  },
+  {
+    title: '组织业务服务',
+    description: '按业务拆分服务，管理网关、服务发现与权限。',
+    tools: ['Java 21', 'Spring Boot 3.5', 'Nacos'],
+  },
+  {
+    title: '处理数据与任务',
+    description: '管理订单和库存数据，调度同步与自动化任务。',
+    tools: ['MySQL 8', 'Redis', 'RabbitMQ', 'XXL-JOB'],
+  },
+  {
+    title: '构建运营工作台',
+    description: '把业务操作和数据分析放进日常使用的界面。',
+    tools: ['Vue 3', 'TypeScript', 'ECharts'],
+  },
+] as const;
 </script>
 
 <template>
@@ -20,18 +43,31 @@ import { site } from '../site';
       </div>
     </div>
   </section>
-  <section class="page-section section-tint">
+  <section id="toolkit" class="page-section section-tint" aria-labelledby="toolkit-title">
     <div class="site-container stack-block">
       <p class="section-kicker">Toolkit</p>
-      <h2>日常使用的技术工具。</h2>
-      <div class="toolkit-grid">
-        <div v-for="group in site.technologies" :key="group.label" class="toolkit-row">
-          <h3>{{ group.label }}</h3>
-          <div class="tag-cloud">
-            <span v-for="item in group.items" :key="item">{{ item }}</span>
+      <h2 id="toolkit-title">技术如何支撑业务。</h2>
+      <div class="toolkit-scenarios">
+        <article v-for="(scenario, index) in toolkitScenarios" :key="scenario.title">
+          <div class="toolkit-scenario-heading">
+            <span aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span>
+            <h3>{{ scenario.title }}</h3>
           </div>
-        </div>
+          <p>{{ scenario.description }}</p>
+          <ul class="toolkit-core-tools" role="list">
+            <li v-for="tool in scenario.tools" :key="tool">{{ tool }}</li>
+          </ul>
+        </article>
       </div>
+      <details class="toolkit-inventory">
+        <summary>完整工具清单</summary>
+        <dl>
+          <div v-for="group in site.technologies" :key="group.label">
+            <dt>{{ group.label }}</dt>
+            <dd>{{ group.items.join('、') }}</dd>
+          </div>
+        </dl>
+      </details>
     </div>
   </section>
 </template>
